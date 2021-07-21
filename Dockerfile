@@ -10,4 +10,6 @@ COPY . .
 RUN pip install -r requirements.txt
 RUN chmod -R +x /scripts
 
+EXPOSE 8080/tcp
+
 ENTRYPOINT ["python", "/scripts/main.py"] 
